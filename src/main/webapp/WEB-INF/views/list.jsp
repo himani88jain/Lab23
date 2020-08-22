@@ -33,7 +33,7 @@
 						<td><fmt:formatNumber
 								value="${studentgrade.score/studentgrade.total}" pattern=".#%" />
 						</td>
-						<td><a href="/grades/delete?id=${studentgrade.id}">Delete</a></td>
+						<td><a href="delete-form?id=${studentgrade.id}&name=${studentgrade.name}">Delete</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>

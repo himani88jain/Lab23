@@ -8,12 +8,11 @@
 </head>
 <body>
 <div class="container">
-
-	  <h1>Delete ${grades.name} ?</h1>
+	  <h1>Delete ${name} ?</h1>
 	  <p><b>Are you sure you want to delete this grade?</b></p><br>
-	  <p>${grades.name}</p>
+	  <p>${name}</p>
 	  <a href="/grades">No,go back</a>
-	  <button type="submit">Yes,delete</button>
+	  <a href="/grades/delete?id=${id}">Yes,delete</a>
    <h1></h1>
 </div>
 </body>

@@ -54,6 +54,15 @@ public class GradesController {
 	}
 
 	
+	@RequestMapping("/delete-form")
+	public String showDeleteForm(Model model,@RequestParam("id") Long id,
+								@RequestParam("name") String name) {
+		model.addAttribute("id",id);
+		model.addAttribute("name",name);
+		System.out.println("hello");
+		return "delete";
+	}
+	
 	@RequestMapping("/grades/delete")
 	public String remove(@RequestParam("id") Long id) {
 		dao.delete(id);
